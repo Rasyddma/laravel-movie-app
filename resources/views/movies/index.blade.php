@@ -123,8 +123,7 @@
                                             <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                
                             <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="col-span-3 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
