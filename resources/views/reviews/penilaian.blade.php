@@ -44,35 +44,34 @@
                                     </div>
                                 
                                 </div>
-
+                                 @foreach ($reviews as $review)
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="col-span-3 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                                01.
+                                              {{ $review['id'] }}
                                             </p>
                                             <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/movie-01.jpg" alt="Product" />
+                                                <img src="src/images/movie/{{ $review['Gambar3'] }}" alt="Product" />
                                             </div>
                                             <p class="text-sm font-medium text-black dark:text-white">
-                                            Jojo Adventure
-                                            </p>
+                                             {{ $review['Movie'] }}
+                                            </p>                
                                         </div>
                                     </div>
                                     <div class="col-span-1 items-center sm:flex">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                            Ayass
+                                        {{ $review['user'] }}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        8,5 IMDb
-                                        ratings
+                                        {{ $review['rating'] }}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                         16-10-2021
+                                        {{ $review['Date'] }}
                                         </p>
                                     </div>
                                     
@@ -83,117 +82,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                                02.
-                                            </p>
-                                            <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/movie-02.jpg" alt="Product" />
-                                            </div>
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                Noragami
-                                            </p>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Saepudin
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            9,6 ratings iQYI
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                         5-3-2023
-                                        </p>
-                                    </div>
-                                    
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                                03.
-                                            </p>
-                                            <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/movie-03.jpg" alt="Product" />
-                                            </div>
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                Wind Breaker
-                                            </p>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            kina
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            7,7 ratings IMDb
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                         10-8-2023
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                                04.
-                                            </p>
-                                            <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/movie-04.jpg" alt="Product" />
-                                            </div>
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                            SPY X Family
-                                            </p>
-                                            </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Ahsa
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                        8,3 ratings IMDb
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                         12-3-2022
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
 
                             <!-- ====== Table Two End -->
