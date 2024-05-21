@@ -46,7 +46,7 @@
                                               {{ $Genre['id'] }}
                                             </p>
                                             <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/{{ $Genre['poster'] }}" alt="Product" />
+                                                <img src="src/images/movie/{{ $Genre['Gambar2'] }}" alt="Product" />
                                             </div>
                                             
                                         </div>
