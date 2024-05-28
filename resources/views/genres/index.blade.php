@@ -15,7 +15,7 @@
                                 <a
                                     href="/movies/create"
                                     class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                                >
+                                     >
                                     Create
                                 </a>
                             </nav>
@@ -34,32 +34,29 @@
                                         <p class="font-medium">Name</p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
-                                        <p class="font-medium">Deskription</p>
+                                        <p class="font-medium">description</p>
                                     </div>
                                 
                                 </div>
-                               @foreach ($Genres as $Genre)
+                               @foreach ($genres as $genre)
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="col-span-3 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                              {{ $Genre['id'] }}
+                                              {{ $genre->id }}
                                             </p>
-                                            <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/{{ $Genre['Gambar2'] }}" alt="Product" />
-                                            </div>
                                             
                                         </div>
                                     </div>
                                     <div class="col-span-1 items-center sm:flex">
                                         
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                              {{ $Genre['Name'] }}
+                                            {{ $genre->name }}
                                             </p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                          {{ $Genre['Deskription'] }}
+                                          {{ $genre->description }}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
